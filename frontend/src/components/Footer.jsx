@@ -18,7 +18,6 @@ function Footer() {
 
     return (
         <footer className="footer">
-
             <div className="container">
 
                 <div className="footer-main">
@@ -44,32 +43,31 @@ function Footer() {
 
                             {/* Instagram */}
 
-                            <a
-                                href={
-                                    restaurantData.socialLinks.instagram
-                                }
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Instagram"
-                                className="footer-social"
-                            >
-                                <FaInstagram size={20} />
-                            </a>
-
+                            {restaurantData.socialLinks.instagram && (
+                                <a
+                                    href={restaurantData.socialLinks.instagram}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Instagram"
+                                    className="footer-social"
+                                >
+                                    <FaInstagram size={20} />
+                                </a>
+                            )}
 
                             {/* Facebook */}
 
-                            <a
-                                href={
-                                    restaurantData.socialLinks.facebook
-                                }
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Facebook"
-                                className="footer-social"
-                            >
-                                <FaFacebookF size={19} />
-                            </a>
+                            {restaurantData.socialLinks.facebook && (
+                                <a
+                                    href={restaurantData.socialLinks.facebook}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Facebook"
+                                    className="footer-social"
+                                >
+                                    <FaFacebookF size={19} />
+                                </a>
+                            )}
 
                         </div>
 
@@ -167,7 +165,6 @@ function Footer() {
                                     className="footer-hours-row"
                                     key={day.day}
                                 >
-
                                     <span>
                                         {day.day}
                                     </span>
@@ -175,7 +172,6 @@ function Footer() {
                                     <span>
                                         {day.hours}
                                     </span>
-
                                 </div>
                             ))}
 
@@ -236,7 +232,6 @@ function Footer() {
                 </div>
 
             </div>
-
         </footer>
     );
 }
