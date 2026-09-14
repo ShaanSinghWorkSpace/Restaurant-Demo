@@ -1,0 +1,389 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+    padding-top: 32px;
+    padding-bottom: var(--space-10);
+
+    background-color: var(--color-background);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.about-page-header {
+    max-width: 850px;
+    margin-bottom: var(--space-10);
+}
+
+.about-page-eyebrow {
+    margin-bottom: var(--space-3);
+
+    color: var(--color-accent);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.about-page-title {
+    margin-bottom: var(--space-5);
+
+    color: var(--color-primary);
+
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.about-page-intro {
+    max-width: 700px;
+
+    color: var(--color-text-muted);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+.about-page-story {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: var(--space-7);
+
+    margin-bottom: var(--space-11);
+}
+
+.about-page-image-wrapper {
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+}
+
+.about-page-image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    transition: transform 500ms ease-out;
+}
+
+.about-page-image-wrapper:hover .about-page-image {
+    transform: scale(1.02);
+}
+
+.about-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-page-label {
+    margin-bottom: var(--space-3);
+
+    color: var(--color-accent);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.about-page-content h2 {
+    margin-bottom: var(--space-5);
+
+    color: var(--color-primary);
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-page-content p:not(.about-page-label) {
+    margin-bottom: var(--space-4);
+
+    color: var(--color-text-muted);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-page-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.about-page-philosophy {
+    padding-top: var(--space-9);
+
+    border-top: 1px solid var(--color-border);
+}
+
+.about-philosophy-header {
+    margin-bottom: var(--space-7);
+}
+
+.about-philosophy-header h2 {
+    color: var(--color-primary);
+
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-philosophy-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: var(--space-5);
+}
+
+.about-philosophy-item {
+    padding: var(--space-5);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-white);
+
+    transition:
+        transform 250ms ease-out,
+        box-shadow 250ms ease-out,
+        border-color 250ms ease-out;
+}
+
+.about-philosophy-item:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(176, 141, 87, 0.45);
+
+    box-shadow:
+        0 10px 24px rgba(23, 20, 18, 0.06);
+}
+
+.about-philosophy-item h3 {
+    margin-bottom: var(--space-3);
+
+    color: var(--color-primary);
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-philosophy-item p {
+    color: var(--color-text-muted);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-page-cta {
+    margin-top: var(--space-11);
+
+    padding: var(--space-8);
+
+    border-radius: var(--radius-lg);
+
+    background-color: var(--color-primary);
+
+    text-align: center;
+}
+
+.about-page-cta-content {
+    max-width: 650px;
+
+    margin-inline: auto;
+}
+
+.about-page-cta .about-page-label {
+    margin-bottom: var(--space-3);
+}
+
+.about-page-cta h2 {
+    margin-bottom: var(--space-4);
+
+    color: var(--color-white);
+
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-page-cta p:not(.about-page-label) {
+    margin-bottom: var(--space-6);
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.about-page-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 24px;
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-white);
+    color: var(--color-primary);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background-color 200ms ease-out,
+        color 200ms ease-out,
+        transform 200ms ease-out;
+}
+
+.about-page-cta-button:hover {
+    background-color: var(--color-background);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 640px) {
+
+    .about-page {
+        padding-top: 56px;
+        padding-bottom: var(--space-9);
+    }
+
+    .about-page-title {
+        font-size: 52px;
+    }
+
+    .about-page-story {
+        gap: var(--space-8);
+    }
+
+    .about-page-content h2 {
+        font-size: 38px;
+    }
+
+    .about-philosophy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-page-cta {
+        padding: var(--space-9);
+    }
+
+    .about-page-cta h2 {
+        font-size: 42px;
+    }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+    .about-page {
+        padding-top: 48px;
+        padding-bottom: var(--space-10);
+    }
+
+    .about-page-title {
+        font-size: 64px;
+    }
+
+    .about-page-story {
+        grid-template-columns: 1.05fr 0.95fr;
+
+        align-items: center;
+
+        gap: var(--space-9);
+    }
+
+    .about-page-image {
+        aspect-ratio: 1 / 1;
+    }
+
+    .about-page-content {
+        padding-block: var(--space-5);
+    }
+
+    .about-page-content h2 {
+        font-size: 42px;
+    }
+
+    .about-philosophy-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about-page-cta {
+        padding: var(--space-10);
+    }
+
+    .about-page-cta h2 {
+        font-size: 48px;
+    }
+}
+
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1280px) {
+
+    .about-page {
+        padding-top: 48px;
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-page-image,
+    .about-philosophy-item,
+    .about-page-cta-button {
+        transition: none;
+    }
+}

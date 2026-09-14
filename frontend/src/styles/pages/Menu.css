@@ -1,0 +1,347 @@
+.menu-page {
+    padding-block: var(--space-10);
+    background-color: var(--color-background);
+    min-height: 70vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.menu-page-header {
+    max-width: 760px;
+    margin-bottom: var(--space-7);
+}
+
+.menu-page-eyebrow {
+    margin-bottom: var(--space-3);
+
+    color: var(--color-accent);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.menu-page-title {
+    margin-bottom: var(--space-4);
+
+    color: var(--color-primary);
+
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.menu-page-description {
+    max-width: 650px;
+
+    color: var(--color-text-muted);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   CATEGORIES
+========================= */
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+
+    margin-bottom: var(--space-7);
+}
+
+.menu-category-button {
+    padding: 10px 18px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+
+    background-color: transparent;
+    color: var(--color-text);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 200ms ease-out,
+        border-color 200ms ease-out,
+        color 200ms ease-out;
+}
+
+.menu-category-button:hover {
+    border-color: var(--color-primary);
+}
+
+.menu-category-button.active {
+    border-color: var(--color-primary);
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.menu-search {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: var(--space-7);
+}
+
+.menu-search input {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-white);
+    color: var(--color-text);
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 200ms ease-out,
+        box-shadow 200ms ease-out;
+}
+
+.menu-search input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.menu-search input:focus {
+    border-color: var(--color-accent);
+
+    box-shadow:
+        0 0 0 3px rgba(176, 141, 87, 0.12);
+}
+
+/* =========================
+   MENU GRID
+========================= */
+
+.menu-page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.menu-page-card {
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-white);
+
+    transition:
+        transform 250ms ease-out,
+        box-shadow 250ms ease-out,
+        border-color 250ms ease-out;
+}
+
+.menu-page-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(176, 141, 87, 0.45);
+
+    box-shadow:
+        0 12px 30px rgba(23, 20, 18, 0.08);
+}
+
+.menu-page-card:focus-within {
+    border-color: var(--color-accent);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.menu-page-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-page-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    transition: transform 500ms ease-out;
+}
+
+.menu-page-card:hover .menu-page-image {
+    transform: scale(1.03);
+}
+
+.menu-featured-badge {
+    position: absolute;
+    top: var(--space-3);
+    left: var(--space-3);
+
+    padding: 6px 10px;
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-accent);
+    color: var(--color-white);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.menu-page-card-content {
+    padding: var(--space-5);
+}
+
+.menu-page-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-3);
+
+    margin-bottom: var(--space-3);
+}
+
+.menu-page-dish-name {
+    color: var(--color-primary);
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.food-type-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid;
+    border-radius: 3px;
+
+    background-color: var(--color-white);
+}
+
+.food-type-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+}
+
+.food-type-indicator.vegetarian {
+    border-color: #4F7D3A;
+}
+
+.food-type-indicator.vegetarian .food-type-dot {
+    background-color: #4F7D3A;
+}
+
+.food-type-indicator.non-vegetarian {
+    border-color: #B94A48;
+}
+
+.food-type-indicator.non-vegetarian .food-type-dot {
+    background-color: #B94A48;
+}
+
+.menu-page-dish-description {
+    margin-bottom: var(--space-4);
+
+    color: var(--color-text-muted);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.menu-page-dish-price {
+    color: var(--color-primary);
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.menu-empty {
+    padding-block: var(--space-8);
+
+    color: var(--color-text-muted);
+
+    text-align: center;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 640px) {
+
+    .menu-page {
+        padding-block: var(--space-9);
+    }
+
+    .menu-page-title {
+        font-size: 48px;
+    }
+
+    .menu-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+    .menu-page {
+        padding-block: var(--space-10);
+    }
+
+    .menu-page-title {
+        font-size: 56px;
+    }
+
+    .menu-page-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-6);
+    }
+
+    .menu-page-card-content {
+        padding: var(--space-6);
+    }
+}

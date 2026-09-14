@@ -1,0 +1,138 @@
+/* =========================
+   Why Choose Us
+   ========================= */
+
+.why-choose-us {
+    padding-block: var(--space-10);
+    background-color: var(--color-background-alt);
+}
+
+/* =========================
+   Section Header
+   ========================= */
+
+.why-choose-us-header {
+    margin-bottom: var(--space-7);
+}
+
+.why-choose-us-eyebrow {
+    margin-bottom: var(--space-3);
+    color: var(--color-accent);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.why-choose-us-title {
+    max-width: 650px;
+    color: var(--color-primary);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+/* =========================
+   Feature Grid
+   ========================= */
+
+.why-choose-us-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+}
+
+/* =========================
+   Feature Card
+   ========================= */
+
+.feature-card {
+    padding: var(--space-6);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    transition:
+        transform 300ms ease-out,
+        box-shadow 300ms ease-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(28, 25, 23, 0.06);
+}
+
+/* =========================
+   Icon
+   ========================= */
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--space-5);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-background-alt);
+    color: var(--color-accent);
+}
+
+/* =========================
+   Content
+   ========================= */
+
+.feature-title {
+    margin-bottom: var(--space-3);
+    color: var(--color-primary);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.feature-description {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (min-width: 640px) {
+
+    .why-choose-us {
+        padding-block: var(--space-10);
+    }
+
+    .why-choose-us-title {
+        font-size: 42px;
+    }
+
+    .why-choose-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =========================
+   Desktop
+   ========================= */
+
+@media (min-width: 1024px) {
+
+    .why-choose-us {
+        padding-block: var(--space-11);
+    }
+
+    .why-choose-us-title {
+        font-size: 48px;
+    }
+
+    .why-choose-us-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-5);
+    }
+
+}

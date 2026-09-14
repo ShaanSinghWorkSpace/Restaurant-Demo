@@ -1,0 +1,139 @@
+.reviews-section {
+    padding-block: var(--space-10);
+    background-color: var(--color-background-alt);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.reviews-header {
+    max-width: 700px;
+    margin-bottom: var(--space-7);
+}
+
+.reviews-eyebrow {
+    margin-bottom: var(--space-3);
+    color: var(--color-accent);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.reviews-title {
+    margin-bottom: var(--space-4);
+    color: var(--color-primary);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.reviews-description {
+    max-width: 600px;
+    color: var(--color-text-muted);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   REVIEWS GRID
+========================= */
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+}
+
+/* =========================
+   REVIEW CARD
+========================= */
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 240px;
+    padding: var(--space-6);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-white);
+}
+
+.review-rating {
+    display: flex;
+    gap: 4px;
+    margin-bottom: var(--space-5);
+
+    color: var(--color-accent);
+}
+
+.review-text {
+    margin-bottom: var(--space-6);
+
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.review-name {
+    margin-top: auto;
+
+    color: var(--color-primary);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 640px) {
+
+    .reviews-section {
+        padding-block: var(--space-9);
+    }
+
+    .reviews-title {
+        font-size: 42px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+    .reviews-section {
+        padding-block: var(--space-10);
+    }
+
+    .reviews-title {
+        font-size: 48px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .review-card {
+        min-height: 280px;
+        padding: var(--space-7);
+    }
+
+    .review-text {
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #1C1917;
+  --color-primary-hover: #292524;
+  --color-accent: #B08D57;
+  --color-accent-hover: #967442;
+  --color-background: #F7F3EC;
+  --color-background-alt: #EFE8DC;
+  --color-dark: #171412;
+  --color-text: #292524;
+  --color-text-muted: #78716C;
+  --color-white: #FFFFFF;
+  --color-border: #DED6C8;
+
+  /* Fonts */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --space-10: 96px;
+  --space-11: 120px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
+/* =========================
+   Global Reset
+   ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================
+   Typography
+   ========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+/* =========================
+   Images
+   ========================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   Form Elements
+   ========================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =========================
+   Container
+   ========================= */
+
+.container {
+  width: min(100% - 40px, 1280px);
+  margin-inline: auto;
+}
+
+/* =========================
+   Responsive Breakpoints
+   ========================= */
+
+/* Tablet */
+@media (min-width: 640px) {
+  .container {
+    width: min(100% - 48px, 1280px);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    width: min(100% - 64px, 1280px);
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .container {
+    width: min(100% - 64px, 1280px);
+  }
+}
+
+/* =========================
+   Container
+   ========================= */
+
+.container {
+  width: min(100% - 40px, 1280px);
+  margin-inline: auto;
+}
+
+/* =========================
+   Responsive Breakpoints
+   ========================= */
+
+/* Tablet */
+@media (min-width: 640px) {
+  .container {
+    width: min(100% - 48px, 1280px);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    width: min(100% - 64px, 1280px);
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .container {
+    width: min(100% - 64px, 1280px);
+  }
+}

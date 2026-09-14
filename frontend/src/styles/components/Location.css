@@ -1,0 +1,246 @@
+.location-section {
+    padding-block: var(--space-10);
+    background-color: var(--color-background);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.location-header {
+    max-width: 700px;
+    margin-bottom: var(--space-7);
+}
+
+.location-eyebrow {
+    margin-bottom: var(--space-3);
+
+    color: var(--color-accent);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.location-title {
+    margin-bottom: var(--space-4);
+
+    color: var(--color-primary);
+
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.location-description {
+    max-width: 600px;
+
+    color: var(--color-text-muted);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.location-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+}
+
+/* =========================
+   MAP
+========================= */
+
+.location-map {
+    width: 100%;
+    min-height: 350px;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+
+    background-color: var(--color-background-alt);
+}
+
+.location-map iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+
+    border: 0;
+}
+
+/* =========================
+   INFORMATION
+========================= */
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.location-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+}
+
+.location-icon {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-background-alt);
+
+    color: var(--color-accent);
+}
+
+.location-item h3 {
+    margin-bottom: var(--space-2);
+
+    color: var(--color-primary);
+
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.location-item p,
+.location-item a {
+    color: var(--color-text-muted);
+
+    font-size: 15px;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.location-item a:hover {
+    color: var(--color-primary);
+}
+
+/* =========================
+   HOURS
+========================= */
+
+.location-hours {
+    width: 100%;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+
+    padding-block: 6px;
+
+    border-bottom: 1px solid var(--color-border);
+
+    color: var(--color-text-muted);
+
+    font-size: 14px;
+}
+
+.hours-row:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   DIRECTIONS BUTTON
+========================= */
+
+.location-directions {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+
+    width: fit-content;
+
+    min-height: 50px;
+    padding: 14px 24px;
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background-color 200ms ease-out,
+        transform 200ms ease-out;
+}
+
+.location-directions:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 640px) {
+
+    .location-section {
+        padding-block: var(--space-9);
+    }
+
+    .location-title {
+        font-size: 42px;
+    }
+
+    .location-map,
+    .location-map iframe {
+        min-height: 450px;
+    }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+    .location-section {
+        padding-block: var(--space-10);
+    }
+
+    .location-title {
+        font-size: 48px;
+    }
+
+    .location-content {
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: stretch;
+        gap: var(--space-8);
+    }
+
+    .location-map,
+    .location-map iframe {
+        min-height: 520px;
+    }
+
+    .location-info {
+        justify-content: center;
+    }
+}

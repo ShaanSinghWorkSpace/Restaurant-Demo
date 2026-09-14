@@ -1,0 +1,127 @@
+/* =========================
+   Restaurant Introduction
+   ========================= */
+
+.restaurant-intro {
+    padding-block: var(--space-10);
+    background-color: var(--color-background-alt);
+}
+
+.restaurant-intro-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   Eyebrow
+   ========================= */
+
+.restaurant-intro-eyebrow {
+    margin-bottom: var(--space-5);
+    color: var(--color-accent);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* =========================
+   Content
+   ========================= */
+
+.restaurant-intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.restaurant-intro-title {
+    max-width: 650px;
+    color: var(--color-primary);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.restaurant-intro-text {
+    max-width: 600px;
+    color: var(--color-text-muted);
+}
+
+.restaurant-intro-text p {
+    margin-bottom: var(--space-4);
+}
+
+.restaurant-intro-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   CTA
+   ========================= */
+
+.restaurant-intro-link {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        color 200ms ease-out,
+        border-color 200ms ease-out;
+}
+
+.restaurant-intro-link:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (min-width: 640px) {
+
+    .restaurant-intro {
+        padding-block: var(--space-10);
+    }
+
+    .restaurant-intro-title {
+        font-size: 42px;
+    }
+
+}
+
+/* =========================
+   Desktop
+   ========================= */
+
+@media (min-width: 1024px) {
+
+    .restaurant-intro {
+        padding-block: var(--space-11);
+    }
+
+    .restaurant-intro-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-9);
+        align-items: start;
+    }
+
+    .restaurant-intro-title {
+        font-size: 48px;
+    }
+
+    .restaurant-intro-link {
+        margin-top: var(--space-7);
+    }
+
+}
