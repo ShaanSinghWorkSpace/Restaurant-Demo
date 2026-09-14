@@ -50,10 +50,10 @@ const restaurantData = {
         }
     ],
 
-    socialLinks: {
-        instagram: "#",
-        facebook: "#"
-    },
+socialLinks: {
+    instagram: "https://www.instagram.com/",
+    facebook: "https://www.facebook.com/"
+},
 
     features: [
         {
