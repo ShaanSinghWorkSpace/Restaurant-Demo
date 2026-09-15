@@ -1,9 +1,16 @@
+/* =========================
+   GALLERY PAGE
+========================= */
+
 .gallery-page {
     min-height: 70vh;
-    padding-block: var(--space-10);
+
+    padding-top: 32px;
+    padding-bottom: var(--space-10);
 
     background-color: var(--color-background);
 }
+
 
 /* =========================
    HEADER
@@ -45,6 +52,7 @@
     font-size: 16px;
     line-height: 1.7;
 }
+
 
 /* =========================
    CATEGORIES
@@ -89,12 +97,14 @@
     color: var(--color-white);
 }
 
+
 /* =========================
    GALLERY GRID
 ========================= */
 
 .gallery-page-grid {
     display: grid;
+
     grid-template-columns: 1fr;
 
     gap: var(--space-5);
@@ -134,6 +144,7 @@
 .gallery-page-item:hover .gallery-page-image {
     transform: scale(1.03);
 }
+
 
 /* =========================
    OVERLAY
@@ -175,6 +186,7 @@
     text-transform: uppercase;
 }
 
+
 /* =========================
    EMPTY STATE
 ========================= */
@@ -186,6 +198,7 @@
 
     text-align: center;
 }
+
 
 /* =========================
    LIGHTBOX
@@ -225,6 +238,7 @@
         250ms ease-out;
 }
 
+
 /* =========================
    LIGHTBOX IMAGE
 ========================= */
@@ -240,6 +254,7 @@
 
     border-radius: var(--radius-md);
 }
+
 
 /* =========================
    CLOSE BUTTON
@@ -280,6 +295,7 @@
 
     background-color: rgba(23, 20, 18, 0.95);
 }
+
 
 /* =========================
    PREVIOUS / NEXT
@@ -332,6 +348,7 @@
     right: 24px;
 }
 
+
 /* =========================
    CAPTION
 ========================= */
@@ -356,6 +373,7 @@
 
     transform: translateX(-50%);
 }
+
 
 /* =========================
    ANIMATIONS
@@ -387,6 +405,7 @@
 
 }
 
+
 /* =========================
    TABLET
 ========================= */
@@ -394,7 +413,8 @@
 @media (min-width: 640px) {
 
     .gallery-page {
-        padding-block: var(--space-9);
+        padding-top: 56px;
+        padding-bottom: var(--space-9);
     }
 
     .gallery-page-title {
@@ -415,6 +435,7 @@
 
 }
 
+
 /* =========================
    DESKTOP
 ========================= */
@@ -422,7 +443,8 @@
 @media (min-width: 1024px) {
 
     .gallery-page {
-        padding-block: var(--space-10);
+        padding-top: 48px;
+        padding-bottom: var(--space-10);
     }
 
     .gallery-page-header {
@@ -451,15 +473,12 @@
 
 }
 
+
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 639px) {
-
-    .gallery-page {
-        padding-block: var(--space-8);
-    }
 
     .gallery-page-header {
         max-width: 100%;
@@ -493,6 +512,7 @@
     .gallery-page-item {
         aspect-ratio: 5 / 4;
     }
+
 
     /* =====================
        MOBILE LIGHTBOX

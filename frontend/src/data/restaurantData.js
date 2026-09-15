@@ -50,10 +50,10 @@ const restaurantData = {
         }
     ],
 
-socialLinks: {
-    instagram: "https://www.instagram.com/",
-    facebook: "https://www.facebook.com/"
-},
+    socialLinks: {
+        instagram: "https://www.instagram.com/",
+        facebook: "https://www.facebook.com/"
+    },
 
     features: [
         {
@@ -148,6 +148,96 @@ socialLinks: {
             image: "/images/menu/gulab-jamun.jpg",
             vegetarian: true,
             featured: false
+        },
+        {
+            id: 7,
+            name: "Amritsari Fish Tikka",
+            description: "Spiced fish fillets grilled until smoky and tender.",
+            price: 459,
+            category: "Starters",
+            image: "/images/menu/amritsari-fish-tikka.png",
+            vegetarian: false,
+            featured: true
+        },
+        {
+            id: 8,
+            name: "Dahi Ke Kebab",
+            description: "Crispy yogurt and cheese kebabs with a soft, creamy centre.",
+            price: 299,
+            category: "Starters",
+            image: "/images/menu/dahi-ke-kebab.png",
+            vegetarian: true,
+            featured: false
+        },
+        {
+            id: 9,
+            name: "Laal Maas",
+            description: "Rajasthani-style slow-cooked mutton in a fiery red chilli gravy.",
+            price: 579,
+            category: "Main Course",
+            image: "/images/menu/laal-maas.png",
+            vegetarian: false,
+            featured: true
+        },
+        {
+            id: 10,
+            name: "Paneer Lababdar",
+            description: "Paneer in a rich tomato, cashew and aromatic spice gravy.",
+            price: 389,
+            category: "Main Course",
+            image: "/images/menu/paneer-lababdar.png",
+            vegetarian: true,
+            featured: false
+        },
+        {
+            id: 11,
+            name: "Hyderabadi Veg Biryani",
+            description: "Fragrant basmati rice layered with vegetables, herbs and spices.",
+            price: 369,
+            category: "Rice & Biryani",
+            image: "/images/menu/veg-biryani.png",
+            vegetarian: true,
+            featured: true
+        },
+        {
+            id: 12,
+            name: "Chicken Dum Biryani",
+            description: "Aromatic basmati rice and spiced chicken cooked together on dum.",
+            price: 449,
+            category: "Rice & Biryani",
+            image: "/images/menu/chicken-biryani.png",
+            vegetarian: false,
+            featured: true
+        },
+        {
+            id: 13,
+            name: "Malai Kofta",
+            description: "Soft paneer and potato dumplings in a creamy cashew gravy.",
+            price: 379,
+            category: "Main Course",
+            image: "/images/menu/malai-kofta.png",
+            vegetarian: true,
+            featured: false
+        },
+        {
+            id: 14,
+            name: "Tandoori Roti",
+            description: "Whole-wheat flatbread baked fresh in the tandoor.",
+            price: 45,
+            category: "Breads",
+            image: "/images/menu/tandoori-roti.png",
+            vegetarian: true,
+            featured: false
+        },
+        {
+            id: 15,
+            name: "Kulfi Falooda",
+            description: "Creamy pistachio kulfi served with falooda noodles and rose syrup.",
+            price: 179,
+            category: "Desserts",
+            image: "/images/menu/kulfi-falooda.png",
+            vegetarian: true,
+            featured: true
         }
     ],
 
@@ -175,6 +265,30 @@ socialLinks: {
             image: "/images/gallery/gallery-4.jpg",
             alt: "Indian cuisine dish",
             category: "Food"
+        },
+        {
+            id: 5,
+            image: "/images/gallery/gallery-5.png",
+            alt: "Restaurant Interior 1",
+            category: "Ambience"
+        },
+        {
+            id: 6,
+            image: "/images/gallery/gallery-6.png",
+            alt: "Food Plating",
+            category: "Food"
+        },
+        {
+            id: 7,
+            image: "/images/gallery/gallery-7.png",
+            alt: "Restaurant Interior 2",
+            category: "Ambience"
+        },
+        {
+            id: 8,
+            image: "/images/gallery/gallery-8.png",
+            alt: "Restaurant Interior 3",
+            category: "Ambience"
         }
     ],
 

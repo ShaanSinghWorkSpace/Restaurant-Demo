@@ -1,8 +1,16 @@
+/* =========================
+   MENU PAGE
+========================= */
+
 .menu-page {
-    padding-block: var(--space-10);
-    background-color: var(--color-background);
     min-height: 70vh;
+
+    padding-top: 32px;
+    padding-bottom: var(--space-10);
+
+    background-color: var(--color-background);
 }
+
 
 /* =========================
    HEADER
@@ -44,6 +52,7 @@
     font-size: 16px;
     line-height: 1.7;
 }
+
 
 /* =========================
    CATEGORIES
@@ -88,6 +97,7 @@
     color: var(--color-white);
 }
 
+
 /* =========================
    SEARCH
 ========================= */
@@ -128,15 +138,19 @@
         0 0 0 3px rgba(176, 141, 87, 0.12);
 }
 
+
 /* =========================
    MENU GRID
 ========================= */
 
 .menu-page-grid {
     display: grid;
+
     grid-template-columns: 1fr;
+
     gap: var(--space-5);
 }
+
 
 /* =========================
    CARD
@@ -169,17 +183,20 @@
     border-color: var(--color-accent);
 }
 
+
 /* =========================
    IMAGE
 ========================= */
 
 .menu-page-image-wrapper {
     position: relative;
+
     overflow: hidden;
 }
 
 .menu-page-image {
     width: 100%;
+
     aspect-ratio: 4 / 3;
 
     object-fit: cover;
@@ -193,6 +210,7 @@
 
 .menu-featured-badge {
     position: absolute;
+
     top: var(--space-3);
     left: var(--space-3);
 
@@ -210,6 +228,7 @@
     text-transform: uppercase;
 }
 
+
 /* =========================
    CARD CONTENT
 ========================= */
@@ -222,6 +241,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
     gap: var(--space-3);
 
     margin-bottom: var(--space-3);
@@ -290,6 +310,7 @@
     font-weight: 600;
 }
 
+
 /* =========================
    EMPTY STATE
 ========================= */
@@ -302,6 +323,7 @@
     text-align: center;
 }
 
+
 /* =========================
    TABLET
 ========================= */
@@ -309,7 +331,8 @@
 @media (min-width: 640px) {
 
     .menu-page {
-        padding-block: var(--space-9);
+        padding-top: 56px;
+        padding-bottom: var(--space-9);
     }
 
     .menu-page-title {
@@ -318,9 +341,11 @@
 
     .menu-page-grid {
         grid-template-columns: repeat(2, 1fr);
+
         gap: var(--space-6);
     }
 }
+
 
 /* =========================
    DESKTOP
@@ -329,7 +354,8 @@
 @media (min-width: 1024px) {
 
     .menu-page {
-        padding-block: var(--space-10);
+        padding-top: 48px;
+        padding-bottom: var(--space-10);
     }
 
     .menu-page-title {
@@ -338,10 +364,23 @@
 
     .menu-page-grid {
         grid-template-columns: repeat(3, 1fr);
+
         gap: var(--space-6);
     }
 
     .menu-page-card-content {
         padding: var(--space-6);
+    }
+}
+
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1280px) {
+
+    .menu-page {
+        padding-top: 48px;
     }
 }
